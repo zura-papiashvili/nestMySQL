@@ -32,5 +32,5 @@ export class TripEntity {
   })
   isDeleted: boolean;
   @ManyToOne(() => UserEntity, (user) => user.id)
-  user: UserEntity;
+  user: number;
 }

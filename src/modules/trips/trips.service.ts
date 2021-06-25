@@ -49,6 +49,7 @@ export class TripsService {
     newTrip.price = data.price;
     newTrip.rating = 0;
     newTrip.description = data.description;
+    newTrip.user = data.userId;
 
     return await this.tripRepository.save(newTrip);
   }

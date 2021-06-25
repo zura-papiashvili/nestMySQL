@@ -11,4 +11,6 @@ export class createTripDTO {
   destination: string;
   @IsString()
   description: string;
+  @IsNumber()
+  userId: number;
 }
