@@ -1,6 +1,7 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { TripEntity } from './entities/trip.entity';
+import { UserEntity } from './entities/user.entity';
 
 import { TripsModule } from './modules/trips/trips.module';
 
@@ -13,7 +14,7 @@ import { TripsModule } from './modules/trips/trips.module';
       username: 'papiashviliz',
       password: 'nest1234',
       database: 'nestproject',
-      entities: [TripEntity],
+      entities: [TripEntity, UserEntity],
       synchronize: true,
     }),
     TripsModule,
